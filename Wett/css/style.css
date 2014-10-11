@@ -1,0 +1,19 @@
+.container{
+	position:relative;
+	top:220px;
+}
+#wettLogo{
+	width:50%;
+	margin: 0 auto;
+	border: 5px solid white;
+}
+
+body{
+	overflow: hidden;
+	background: black;
+}
+
+.logo-text{
+	color:white;
+	text-align:center;
+}
