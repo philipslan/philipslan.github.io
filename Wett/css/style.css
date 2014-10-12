@@ -247,7 +247,7 @@ body{
 #wettLogo {
     width:50%;
     padding:10px;
-    border: 5px solid white;   
+    border: 5px solid gray;   
     margin: 0 auto; 
     border-radius: 10px;
     -webkit-transition: border 0.05s linear, box-shadow 0.05s linear;
