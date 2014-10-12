@@ -5,5 +5,7 @@ $(document).ready(function(){
 	$("#wettLogo").hover(
 		function() {  
 	    $("#wettLogo").toggleClass('active');
+	    $("#logoText").toggleClass('active');
+	    $("nav").toggleClass('active');
 		});
 });

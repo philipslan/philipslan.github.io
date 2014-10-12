@@ -62,10 +62,6 @@ h6{
 p{
 	font-size:20px;
 }
-a:hover{
-	color:rgb(237,45,58) !important;
-	text-decoration:none;
-}
 hr{
 	font-weight: 700;
 	height:20px;
@@ -77,30 +73,6 @@ input, textarea{
 /* =======================================================
    1.BASIC COMMON STYLES-DESKTOP
 ========================================================== */
-.text-white{
-	color:rgb(255,255,255) !important;
-}
-.text-white-hover{
-	color:rgb(255,255,255) !important;
-}
-.text-white-hover:hover{
-	color:rgb(237,45,58) !important;
-}
-.text-red{
-	color:rgb(237,45,58)!important;
-}
-.text-green-imp{
-	color: rgb(45,220,103)!important;
-}
-.text-green-imp:hover{
-	color:rgb(45,238,103)!important;
-}
-.text-black-redhover{
-	color:rgb(0,0,0);
-}
-.text-black-redhover:hover{
-	color:rgb(237,45,58);
-}
 .text-bold{
 	font-weight: 400;
 }
@@ -210,20 +182,10 @@ input, textarea{
 	text-align: middle;
 
 }
-.btn-gray:hover{
-	background-color:rgb(237,45,58)!important;
-	border-color:rgb(237,45,58)!important;
-	color:#FFF;
-}
 .btn-red{
 	background-color:rgb(237,45,58);
 	border-color:rgb(237,45,58);
 	color:#FFF;
-}
-.btn-red:hover{
-	background-color:rgb(220,220,220);
-	border-color:rgb(220,220,220);
-	color:rgb(204,51,51);
 }
 .hr-80{
 	width:80%;
@@ -266,9 +228,20 @@ body{
 	overflow: hidden;
 	background: black;
 }
+
+.navbar{
+	background:black;
+}
+
+
+.navbar .nav > li > a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
 .container{
 	position:relative;
-	top:200px;
+	top:150px;
 }
 
 #wettLogo {
@@ -297,14 +270,13 @@ body{
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-.container:hover #logoText{
-  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-  animation: neon2 1.5s ease-in-out infinite alternate;
+#logoText.active{
+	color:#ffffff;
+  -webkit-animation: neon2 .5s ease-in-out infinite alternate;
+  -moz-animation: neon2 .5s ease-in-out infinite alternate;
+  animation: neon2 .5s ease-in-out infinite alternate;
 }
-.container:hover #logoText{
-color:#ffffff;  
-}
+
 
 #logoText{
 	color:black;
@@ -312,9 +284,9 @@ color:#ffffff;
 }
 
 .animate{
-	-webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-  animation: neon2 1.5s ease-in-out infinite alternate;
+	-webkit-animation: neon2 2s ease-in-out infinite alternate;
+  -moz-animation: neon2 2s ease-in-out infinite alternate;
+  animation: neon2 2s ease-in-out infinite alternate;
 }
 
 /*glow for webkit*/
