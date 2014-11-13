@@ -4,8 +4,16 @@ $(document).ready(function(){
 
 	$("#wettLogo").hover(
 		function() {  
-	    $("#wettLogo").toggleClass('active');
-	    $("#logoText").toggleClass('active');
-	    $("nav").toggleClass('active');
+	    $("#wettLogo").addClass('active');
+	    $("#logoText").addClass('active');
 		});
+
+	$("#wettLogo").one('mouseover',
+		function(){
+			$('nav').fadeTo('slow', 0.1, function()
+			{
+			  $(this).css('visibility', 'visible');
+			}).fadeTo('slow', 1);
+		});
+
 });

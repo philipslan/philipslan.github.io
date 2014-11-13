@@ -229,13 +229,11 @@ body{
 	background: black;
 }
 
-.navbar{
-	background:black;
+nav{
+	visibility:hidden;
 }
 
-
 .navbar .nav > li > a:hover {
-    background-color: #000;
     color: #fff;
 }
 
