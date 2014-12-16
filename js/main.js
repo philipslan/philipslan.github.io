@@ -18,7 +18,6 @@ $(document).ready(function()
 			$("#nav").css('visibility','hidden');
 		});
 
-
 		$("#nav a").bind("click",function(event)
 			{ 
 				event.preventDefault(); 
@@ -28,6 +27,7 @@ $(document).ready(function()
 						$(target).offset().left, 
 						scrollTop: $(target).offset().top 
 					}, 500); 
+
 			});
 	}); 
 
