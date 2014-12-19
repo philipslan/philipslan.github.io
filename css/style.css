@@ -168,3 +168,14 @@ input,textarea{
 	border-radius: 5px;
 }
 
+#redirect1{
+	top: 5%;
+}
+#redirect1 a{
+	border: 1px solid white;
+	padding: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-radius: 5%;
+}
+

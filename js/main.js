@@ -32,10 +32,10 @@ $(document).ready(function()
 
 		var myDataRef = new Firebase('https://philiplan.firebaseio.com/');
 		$('#submit').on("click",function() {
-      var name = $('#name').val()
-      var email = $('#email').val()
-      var subject = $('#subject').val()
-      var message= $('#message').val()
+      var name = $('#name').val();
+      var email = $('#email').val();
+      var subject = $('#subject').val();
+      var message= $('#message').val();
       myDataRef.push({name: name, email: email, subject:subject, message: message});
    	});
 	}); 
