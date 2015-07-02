@@ -2,9 +2,8 @@ $(document).on("click","#submit",function(){
 	var myDataRef = new Firebase('https://philiplan.firebaseio.com/');
   var name = $('#name').val();
   var email = $('#email').val();
-  var subject = $('#subject').val();
   var message= $('#message').val();
-  myDataRef.push({name: name, email: email, subject:subject, message: message});
+  myDataRef.push({name: name, email: email, message: message});
 });
 
 $(document).on("click","a[href*=#]:not([href=#])",function(){
