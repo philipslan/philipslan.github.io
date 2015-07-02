@@ -5,107 +5,221 @@
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Philip Lan</title>
-		<link rel="icon" type="image/png" href=""/>
-		<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+		<!-- Compiled and minified CSS -->
+	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="js/main.js"></script>
-		<script src="https://cdn.firebase.com/js/client/2.0.6/firebase.js"></script>
+		<!-- Compiled and minified JavaScript -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+  	<script src="js/main.js"></script>
 	<head>
 	<body>
-		<ul id="nav"> 
-			<li><a id="homenav" href="#home">Home</a></li> 
-			<li><a href="#about">About</a></li> 
-			<li><a href="#work">Work</a></li> 
-			<li><a href="#contact">Contact</a></li> 
-		</ul>
-		<div id="home" class="panel">
+		<div class="navbar-fixed">
+			<nav class="blue darken-4">
+				<div class="navbar-wrapper">
+					<div class="container">
+						<ul id="nav-mobile" class="left hide-on-med-and-down">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#portfolio">Portfolio</a></li> 
+							<li><a href="#contact">Contact</a></li> 					
+						</ul>
+					</div>		
+				</div>
+			</nav>
+		</div>
+		<div id="home" class="panel blue darken-2">
 			<div class="container">
-				<h1>Philip Lan</h1>	
-				<h4>Developer • Student • Entrepreneur</h4> 
-				<img src="profpic.JPG">
-				<h4> <a href="#about">About </a>|<a href="#work"> Work </a>|<a href="#contact"> Contact</a></h4>
+				<h3>Philip Lan</h3>	
+				<h5>Developer • Student</h5>
 			</div>
 		</div>
 		<div id="about" class="panel">
 			<div class="container">
-				<div class="about-wrapper">
-					<h1>About</h1>
-					<p>Hi, my name is Philip. I am currently a sophomore at Northwestern University, studying computer science. I have some experience with web development, entrepreneurship and big data. Currently, I am working with a Northwestern Professor, Douglas Downey, on a research project focused on data visualization.</p>
-					<p>Aside from staring at my screen all day, I like to play basketball and go on spontaneous adventures with my friends.</p>
-				</div>	
+				<h3>About</h3>
+				<p>Hi, my name is Philip. I am currently a rising junior at Northwestern University, passionate about computer science. I have some experience with web development, entrepreneurship and big data. In the past I worked with a Northwestern Professor, Douglas Downey, on a research project focused on data visualization. So am I up to this summer? I'm doing some pretty exciting work at IBM, retouching the designs one of its products.</p>
+				<p>Aside from staring at my screen all day, I like to play basketball and go on spontaneous adventures with my friends.</p>
 			</div>
 		</div>
-		<div id="work" class="panel">
+		<div id="portfolio" class="blue darken-2">
 			<div class="container">
-				<div class="wrapper">
-					<h1>Work</h1>
-					<div class="projects">
-						<div id="atlasify" class="portfolio">
-							<h2>Atlasify</h2>
-							<h3>June 2014 - Present</h3>
-							<p>Atlasify is a new way to visualize how different concepts are related: maps, periodic tables, and other reference systems. On the Atlasify project I worked on creating explanations between two search queries. My partner and I created a system that took two search concepts from a wikipedia api that Professor Downey had previously developed, and took small snippets of text from the top ranked shared inlinks. Initially this project was written in as a php app but we have since ported over to node.js environment.</p>
-							<p>Technology Used: Node.js, python, mySQL, php, jade, express
-							<p><a href="http://downey-n1.cs.northwestern.edu:3030/">Website</a></p>
-						</div>
-						<div id= "wett" class="portfolio">
-							<h2>Wett</h2>
-							<h3>December 2014</h3>
-							<p>I developed a ruby on rails website for my class IEMS 225: Principles of Entrepreneurship. In this class we created companies, that had a unique business proposition. My team wanted to sell hawaiian t-shirts. Since we were selling our shirts through an e-commerce platform I decided to create the website for the group. Using rails an adminstrator can login into the system and check orders along with reading user comments.
-							<p>Technology Used: Ruby on Rails, css, scss</p> 
-							<p><a href="http://wett.herokuapp.com">Website</a></p>
-						</div>
-						<div id="textdb" class="portfolio">
-							<h2>TextDB</h2>
-							<h3>November 2014</h3>
-							<p>TextDB was a hackathon project that my friends and I worked on at Wildhacks 2014. The idea behind the project was to create a way to store data on the fly by configuring databases using 7 meta data tables using PostgreSQL. TextDB is a flask application that is also integrated with the Twilio API to allow users to text data via sms to their database keys. Users can then access this information online.</p>
-							<p>Technology Used: Python, Flask, PostgreSQL, SQLAlchemy, Boostrap</p>
-							<p><a href="http://textdb.herokuapp.com/">Website</a></p>
-						</div>
-						<div id= "asg" class="portfolio">
-							<h2>ASG Calendar</h2>
-							<h3>October 2014 - Present</h3>
-							<p>Still in the developing process. Worked on creating a calendar scheduling application for student groups using AngularJS</p>
-							<p>Technology Used: AngularJS, Node.js</p>
-						</div>
-						<div id="projectpitch" class="portfolio">
-							<h2>Project Pitch</h2>
-							<h3>August 2014</h3>
-							<p>Project Pitch is a quarter-long entrepreneurship development program that I run at Northwestern through EPIC. Over the summer I worked on redesigning the website and replaced much of the content. This was my first web project and I learned a lot of basic tools used in web development such as javascript, css, php, and bootstrap.</p>
-							<p>Technology Used: php, boostrap, javascript
-							<p><a href="http://nuprojectpitch.com">Website</a></p>
-						</div>
+				<h3>Portfolio</h3>
+				<div class="projects">
+					<div id= "engage" class="card-panel hoverable">
+						<h4>Engage NU</h4>
+						<h5>January 2015 - Present</h5>
+						<p>Worked on the front end of a student volunteering website. Still in the process of updating styles.</p>
+						<p>Technology Used: CSS, HTML5</p>
+						<div class="row">
+			        <div class="col s12 m7">
+			          <div class="card">
+			            <div class="card-image">
+			              <img src="images/engage.png">
+			            </div>
+			            <div class="card-action">
+			              <a href="http://engagenu.parseapp.com/">EngageNU</a>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+					</div>
+					<div id= "asg" class="card-panel hoverable">
+						<h4>ASG Calendar</h4>
+						<h5>October 2014 - Present</h5>
+						<p>Still in the developing process. Worked on creating a calendar scheduling application for student groups using AngularJS</p>
+						<p>Technology Used: AngularJS, Node.js</p>
+						<div class="row">
+			        <div class="col s12 m7">
+			          <div class="card">
+			            <div class="card-image">
+			              <img src="images/calendar.png">
+			            </div>
+			            <div class="card-action">
+			              <a href="http://textdb.herokuapp.com/">Calendar</a>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+					</div>
+					<div id="mccormick" class="card-panel hoverable">
+						<h4>McCormick Web Team</h4>
+						<h5>March 2015 - June 2015</h5>
+						<p>During the spring quarter of my sophomore year, I had the opportunity to work on a web application to streamline the process of scheduling bulk events, that also might be repeated and integrate it into a Ruby on Rails application. The link below is a jQuery implementation of the bulk scheduler, the rails application pulled the dates stored in a javascript object on the page.</p>
+						<p>Technology Used: jQuery, javascript, bootstrap, RoR</p>
+						<div class="row">
+			        <div class="col s12 m7">
+			          <div class="card">
+			            <div class="card-image">
+			              <img src="images/scheduler.png">
+			            </div>
+			            <div class="card-action">
+			              <a href="http://philiplan.me/scheduling">Scheduler</a>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+					</div>
+					<div id="atlasify" class="card-panel hoverable">
+						<h4>Atlasify</h4>
+						<h5>June 2014 - May 2015</h5>
+						<p>Atlasify is a new way to visualize how different concepts are related: maps, periodic tables, and other reference systems. On the Atlasify project I worked on creating explanations between two search queries. My partner and I created a system that took two search concepts from a wikipedia api that Professor Downey had previously developed, and took small snippets of text from the top ranked shared inlinks. Initially this project was written in as a php app but we have since ported over to node.js environment.</p>
+						<p>Technology Used: Node.js, python, mySQL, php, jade, express</p>
+						<div class="row">
+			        <div class="col s12 m7">
+			          <div class="card">
+			            <div class="card-image">
+			              <img src="images/atlasify.png">
+			            </div>
+			            <div class="card-action">
+			              <a href="http://atlasify.com/">Atlasify</a>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+					</div>
+					<div id= "wett" class="card-panel hoverable">
+						<h4>Wett</h4>
+						<h5>December 2014</h5>
+						<p>I developed a ruby on rails website for my class IEMS 225: Principles of Entrepreneurship. In this class we created companies, that had a unique business proposition. My team wanted to sell hawaiian t-shirts. Since we were selling our shirts through an e-commerce platform I decided to create the website for the group. Using rails an adminstrator can login into the system and check orders along with reading user comments.
+						<p>Technology Used: Ruby on Rails, css, scss</p>
+						<div class="row">
+			        <div class="col s12 m7">
+			          <div class="card">
+			            <div class="card-image">
+			              <img src="images/atlasify.png">
+			            </div>
+			            <div class="card-action">
+			              <a href="http://wett.herokuapp.com">Wett</a>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+					</div>
+					<div id="textdb" class="card-panel hoverable">
+						<h4>TextDB</h4>
+						<h5>November 2014</h5>
+						<p>TextDB was a hackathon project that my friends and I worked on at Wildhacks 2014. The idea behind the project was to create a way to store data on the fly by configuring databases using 7 meta data tables using PostgreSQL. TextDB is a flask application that is also integrated with the Twilio API to allow users to text data via sms to their database keys. Users can then access this information online.</p>
+						<p>Technology Used: Python, Flask, PostgreSQL, SQLAlchemy, Boostrap</p>
+						<div class="row">
+			        <div class="col s12 m7">
+			          <div class="card">
+			            <div class="card-image">
+			              <img src="images/textdb.png">
+			            </div>
+			            <div class="card-action">
+			              <a href="http://textdb.herokuapp.com/">TextDB</a>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+					</div>
+					<div id="projectpitch" class="card-panel hoverable">
+						<h4>Project Pitch</h4>
+						<h5>August 2014</h5>
+						<p>Project Pitch is a quarter-long entrepreneurship development program that I run at Northwestern through EPIC. Over the summer I worked on redesigning the website and replaced much of the content. This was my first web project and I learned a lot of basic tools used in web development such as javascript, css, php, and bootstrap.</p>
+						<p>Technology Used: php, boostrap, javascript</p>
+						<div class="row">
+			        <div class="col s12 m7">
+			          <div class="card">
+			            <div class="card-image">
+			              <img src="images/pp.png">
+			            </div>
+			            <div class="card-action">
+			              <a href="http://nuprojectpitch.com">Project Pitch</a>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
 					</div>
 				</div>
 			</div>	
 		</div>
 		<div id="contact" class="panel">
 			<div class="container">
-				<h1>Contact</h1>
-				<form action= "#redirect">
-					<h2>Name:</h2>
-					<input class="input" id="name" type="text" placeholder="name" name="name"></input>
-					<br/>
-					<h2>E-Mail:</h2>
-					<input class="input" id="email" type="text" placeholder="email" name="email"></input>
-					<br/>
-					<h2>Subject:</h2>
-					<input class="input" id="subject" type="text" placeholder="subject" name="subject"></input>
-					<br/>
-					<h2>Message:</h2>
-					<textarea id="message" placeholder="message" name="message"></textarea>
-					<br/>
-					<input id="submit" type="submit" value="Submit"></input>
-				</form>
-				<p><a href="http://linkedin.com/pub/philipslan">LinkedIn</a> <a href="http://github.com/philipslan">Github</a>
-				</p>
+				<div class="card-panel hoverable">
+					<div class="row">
+				    <form class="col s12" action= "#redirect">
+				    	<h3 class="center-align">Contact</h3>
+							<hr>
+				      <div class="row">
+				        <div class="input-field col s12">
+				          <input id="name" type="text" class="validate" name="name">
+				          <label for="first_name">Name</label>
+				        </div>
+				      </div>
+				      <div class="row">
+				        <div class="input-field col s12">
+				          <input id="email" type="email" class="validate" name="email">
+				          <label for="email">Email</label>
+				        </div>
+				      </div>
+				      <div class="row">
+				        <div class="input-field col s12">
+				          <textarea id="message" class="materialize-textarea" name="message"></textarea>
+				          <label for="textarea1">Message</label>
+				        </div>
+				      </div>
+				      <div class="row">
+				      	<div class="col s12">
+				      		<button id="submit" class="btn waves-effect waves-light modal-trigger" type="submit" name="action" value="Submit" href="#modal1">
+				      			Submit
+								  </button>
+				      	</div>
+				      </div>
+				    </form>
+				  </div>
+				</div>
 			</div>
 		</div>
-		<div id="redirect" class="panel">
-			<div id="redirect1" class="container">
-				<h2>Thanks for submitting your form!</h2>
-				<br/>
-				<h4><a href="http://philiplan.me">HOME</a></h4>
-			</div>
-		</div>
+		<div id="modal1" class="modal">
+	    <div class="modal-content">
+	      <h4>Message</h4>
+	      <p>Thanks for submitting your form!</p>
+	    </div>
+	    <div class="modal-footer">
+	      <a href="#home" class=" modal-action modal-close waves-effect waves-green btn-flat">Home</a>
+	    </div>
+	  </div>
 	</body>
 </html>

@@ -1,181 +1,43 @@
-/* Typography */
-@font-face {
-  font-family: 'Nexalight';
-  src: url(../fonts/nexalight.otf);
-} 
-
-body{
-	font-weight:300;
-	font-family: 'Nexalight','Lato','Calibri', sans-serif;
-	background: white;
-}
-h1,h2,h3,h4,h5,h6,p,a,input, textarea{
-	font-family: 'Nexalight','Lato', 'Calibri', sans-serif;
-	text-align:center;
-	text-decoration: none;
-	color:white;
-}
-
-a:hover{
-	color:#00bbff;
-	text-decoration:none;
-}
-input, textarea{
-	font-size:16px !important;
-}
-/* General Styles */
-html, body {
+html,body{
 	height: 100%;
-	padding: 0;
-	margin: 0 auto;
-	overflow:hidden;
+	width: 100%;
 }
-
-body { 
-	width: 400%;
-	background: black;
-} 
-
-.panel {
-	top:7%;
-	width: 25%;
+.panel{
 	height: 100%;
-	float: left; 
-	margin: auto 0;
-	position:relative;
-}
-
-.container{
-	padding-top: 4%;
-	background:black;
-	position:relative;
-	height: 80%;
-	width: 80%;
-	margin: 0 auto;
-	border: 1px solid white;
-}
-
-.wrapper{
-	height: 80%;
-	position: relative;
-	left:7.5%;
-	width: 85%;
-	padding: 0;
-	margin: auto 0;
-}
-/* Nav */
-#nav {
-	left:40%;
-	margin:0 auto;
-	width: 20%;
-	padding:0;
-  display:inline;
-  text-align: center;
-  list-style: none;
-	z-index:5;
-	position: fixed;
-	background: black;
-	border: 1px solid white;
-	visibility: hidden;
-	padding-top: 1%;
-} 
-
-#nav li{
-	padding:.5%;
-	display: inline-block;
-  text-align:center;
-} 
-
-#nav a{
-	text-align:center;
+	margin: 0;
 }
 
 /* Home */
 #home{
-	height: 100%;
-}
+	background: blue;
+	color: white;
+	padding-top: 18%;
 
-#home img{
-	width: 21%;
-	border: 1px solid white;
-	border-radius: 50%;
-	display: block;
-	margin: 0 auto;
+}
+#home h3{
+	margin: 0;
 }
 
 /* About */
-#about p{
-	text-align: left;
-}
-.about-wrapper{
-	height: 80%;
-	position: relative;
-	left:20%;
-	width: 60%;
-	padding: 0;
-	margin: auto 0;
+#about{
+	padding-top: 12%;
 }
 
-/* Work */
-#work h1{
-	margin: 0 auto;
-}
-.projects{
-	height:99%;
-	overflow-y: scroll!important;
-}
-.portfolio h2{
-	color:#00bbff;
-	text-align: left;
-}
-.portfolio p{
-	text-align: left;
-}
-.portfolio a{
-	text-decoration: underline;
-}
-.portfolio h3{
-	text-align: left;
-}
-
-/*Contact*/
-#contact form{
-	text-align: center;
-}
-#contact h2{
-	padding:0;
-	margin: auto 0;
-	padding-top: .5%;
-	padding-bottom: .5%;
-}
-#contact .input{
-	width: 40%;
-}
-#contact textarea{
-	width: 40%;
-	height: 150px;
-	resize: none;
-}
-input,textarea{
-	color:black;
-	text-align: left;
-}
-#submit{
-	margin-top:2%;
+/* Portfolio */
+#portfolio h3{
 	color: white;
-	background:black;
-	border: 1px solid white;
-	border-radius: 5px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+#portfolio{
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+#portfolio a{
+	color: #0d47a1;
 }
 
-#redirect1{
-	top: 5%;
+/* Contact */
+#contact{
+	padding-top: 5%;
 }
-#redirect1 a{
-	border: 1px solid white;
-	padding: 1%;
-	padding-left: 2%;
-	padding-right: 2%;
-	border-radius: 5%;
-}
-
