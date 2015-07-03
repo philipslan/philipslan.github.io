@@ -12,7 +12,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<!-- Compiled and minified JavaScript -->
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-  	<script src="https://cdn.firebase.com/js/client/2.0.6/firebase.js"></script>
   	<script src="js/main.js"></script>
 	<head>
 	<body>
@@ -128,7 +127,7 @@
 			        <div class="col s12 m7">
 			          <div class="card">
 			            <div class="card-image">
-			              <img src="images/atlasify.png">
+			              <img src="images/wett.png">
 			            </div>
 			            <div class="card-action">
 			              <a href="http://wett.herokuapp.com">Wett</a>
@@ -180,7 +179,7 @@
 			<div class="container">
 				<div class="card-panel hoverable">
 					<div class="row">
-				    <form class="col s12" action= "#redirect">
+				    <form class="col s12">
 				    	<h3 class="center-align">Contact</h3>
 							<hr>
 				      <div class="row">
@@ -203,7 +202,7 @@
 				      </div>
 				      <div class="row">
 				      	<div class="col s12">
-				      		<button id="submit" class="waves-effect waves-light btn">
+				      		<button id="submit" class="waves-effect waves-light btn modal-trigger" data-target="modal1">
 				      			Submit
 								  </button>
 				      	</div>
@@ -212,6 +211,16 @@
 				  </div>
 				</div>
 			</div>
+		</div>
+		<!-- Modal Structure -->
+		<div id="modal1" class="modal">
+		  <div class="modal-content">
+		    <h4>Message</h4>
+		    <p>Your message hase been sent! Thank you.</p>
+		  </div>
+		  <div class="modal-footer">
+		    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+		  </div>
 		</div>
 	</body>
 </html>
