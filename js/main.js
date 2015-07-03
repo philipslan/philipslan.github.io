@@ -1,5 +1,8 @@
+$(document).ready(function(){
+  myDataRef = new Firebase('https://philiplan.firebaseio.com/');
+});
+
 $(document).on("click","#submit",function(){
-	var myDataRef = new Firebase('https://philiplan.firebaseio.com/');
   var name = $('#name').val();
   var email = $('#email').val();
   var message= $('#message').val();
@@ -18,6 +21,3 @@ $(document).on("click","a[href*=#]:not([href=#])",function(){
     }
   }
 });
-
-
-  
